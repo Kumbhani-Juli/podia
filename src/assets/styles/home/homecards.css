@@ -1,0 +1,172 @@
+/* Section styling */
+.home-card-section {
+  padding: 1rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.home-card-header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.home-card-header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.home-card-header p {
+  font-size: 1.25rem;
+  margin-bottom: 10rem;
+  color: black;
+}
+
+/* Card container styling */
+.cards-container {
+  margin: 1rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 0 1rem;
+  /* Add padding for mobile devices */
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Card content */
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.card span {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    /* Display 3 cards per row for large tablets */
+    gap: 1rem;
+    /* Adjust gap for better spacing */
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* Display 2 cards per row for tablets */
+    gap: 1rem;
+    /* Adjust gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    /* Stack cards vertically for mobile devices */
+    gap: 1rem;
+    /* Adjust gap */
+  }
+
+  .home-card-header {
+    width: 100%;
+    /* Make header full width for mobile */
+  }
+
+  .home-card-header h1 {
+    font-size: 1.8rem;
+    /* Reduce font size */
+  }
+
+  .home-card-header p {
+    font-size: 1rem;
+    /* Reduce paragraph font size */
+    margin-bottom: 3rem;
+    /* Reduce bottom margin */
+  }
+
+  .card {
+    padding: 1.5rem;
+    /* Add more padding for mobile view */
+  }
+
+  .card-image {
+    height: auto;
+    /* Ensure image scales properly */
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+    /* Adjust font size for mobile */
+  }
+
+  .card p {
+    font-size: 1rem;
+    /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-card-header h1 {
+    font-size: 1.5rem;
+    /* Further reduce heading font size for very small screens */
+  }
+
+  .home-card-header p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .cards-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+    /* Adjust heading font size */
+  }
+
+  .card p {
+    font-size: 1rem;
+    font-weight: 600;
+    /* Adjust paragraph font size */
+  }
+}

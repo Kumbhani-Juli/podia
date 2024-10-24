@@ -1,0 +1,138 @@
+/* footer.css */
+.footer {
+  background-color: #A5C8D8;
+  padding: 2rem 0;
+}
+
+/* First Section Styles */
+.footer-first-section {
+  margin: 3rem auto;
+  width: 60%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-first-section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-first-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.get-started-button {
+  background-color: #748e99;
+  color: #e1edf2;
+  padding: 0.85rem 1rem;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #e1edf2;
+  color: #748e99;
+}
+
+/* Second Section Styles */
+.footer-second-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin: 2rem 8rem;
+  padding: 2rem 0;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+/* Column Headers */
+.footer-column h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .footer-first-section {
+    margin: 2rem 4rem;
+    width: 90%;
+  }
+
+  .footer-second-section {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 1rem;
+  }
+
+  .footer-first-section {
+    margin: 1rem auto;
+    width: 80%;
+  }
+
+  .footer-first-section h2 {
+    font-size: 2rem;
+    margin: 0;
+    width: 100%;
+    font-weight: 700;
+  }
+
+
+  .footer-second-section {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for small screens */
+  }
+
+  .footer-column h3 {
+    font-size: 1.2rem;
+    /* Smaller headers */
+  }
+
+  .footer-column p {
+    font-size: 1rem;
+    /* Smaller text */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-first-section h2 {
+    font-size: 1.5rem;
+    /* Smaller header for mobile */
+  }
+
+  .footer-first-section p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    /* Smaller paragraph text */
+  }
+
+  .footer-second-section {
+    margin: 0 1rem;
+  }
+
+  .footer-column h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* Smaller headers */
+  }
+
+  .footer-column p {
+    font-size: 1rem;
+    /* Smaller text */
+  }
+}

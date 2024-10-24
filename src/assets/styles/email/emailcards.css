@@ -1,0 +1,197 @@
+/* emaildesign.css */
+.email-design {
+  padding: 2rem 8rem;
+  text-align: center;
+}
+
+/* Header styling */
+.email-design-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-design-header p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6rem;
+}
+
+/* Image Section */
+.email-design-image-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.email-design-image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.email-design-image-item img {
+  width: 100%;
+  height: auto;
+}
+
+.email-design-image-item:hover {
+  transform: scale(1.05);
+}
+
+/* Row span */
+.email-design-row-span {
+  grid-row: 1 / span 2;
+}
+
+/* Features Section */
+.email-design-features-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 6rem;
+  padding: 2rem 0;
+}
+
+.email-design-features-text {
+  padding-right: 2rem;
+  text-align: left;
+  width: 50%;
+}
+
+.email-design-features-text h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.email-design-features-text p {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.email-design-features-list {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.email-design-features-list h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-design-features-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.email-design-features-list li {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.email-design-features-list li::before {
+  content: "✓";
+  margin-right: 0.5rem;
+  background-color: #A5C8D8;
+  padding: 0.1rem 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .email-design {
+    padding: 1rem;
+    /* Reduce padding for medium screens */
+  }
+
+  .email-design-image-section {
+    grid-template-columns: repeat(2, 1fr);
+    /* Change to 2 columns */
+  }
+
+  .email-design-features-section {
+    flex-direction: column;
+    /* Stack columns */
+    align-items: center;
+    /* Center content */
+  }
+
+  .email-design-features-text {
+    padding-right: 0;
+    /* Remove right padding */
+    margin-bottom: 2rem;
+    /* Add margin below */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+  }
+
+  .email-design-features-list {
+    padding-left: 0;
+    /* Remove left padding */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+  }
+}
+
+@media (max-width: 768px) {
+  .email-design-header h2 {
+    font-size: 2rem;
+    /* Smaller font size for header */
+  }
+
+  .email-design-header p {
+    font-size: 1.1rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    /* Smaller font size for paragraph */
+  }
+
+  .email-design-image-section {
+    grid-template-columns: 1fr 1fr;
+    /* Change to single column */
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .email-design-features-section {
+    flex-direction: column;
+    /* Stack columns */
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .email-design-features-text,
+  .email-design-features-list {
+    width: 90%;
+    text-align: left;
+
+    /* Make text sections a bit wider */
+  }
+
+  .email-design-features-text h3 {
+    font-size: 2rem;
+  }
+
+  .email-design-features-text p {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .email-design-features-list h4 {
+    font-size: 1.2rem;
+    /* Smaller font size for features heading */
+  }
+
+  .email-design-features-list li {
+    font-size: 1.1rem;
+    /* Smaller font size for list items */
+  }
+}

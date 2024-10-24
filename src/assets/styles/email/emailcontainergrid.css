@@ -1,0 +1,124 @@
+/* General styling for the grid */
+.text-container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns */
+  gap: 20rem;
+  margin: 10rem 8rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* First column (heading and main text) */
+.first-column h2 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.first-column p {
+  font-size: 1.1rem;
+}
+
+/* Second column (sub headings and paragraphs) */
+.second-column h3 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.second-column p {
+  font-size: 1.1rem;
+}
+
+/* Responsive styling for large tablets */
+@media (max-width: 1200px) {
+  .text-container-grid {
+    gap: 10rem;
+    margin: 6rem 4rem;
+  }
+
+  .first-column h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .second-column h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 1024px) {
+  .text-container-grid {
+    grid-template-columns: 1fr;
+    /* Single column for tablets */
+    gap: 5rem;
+    margin: 4rem 2rem;
+  }
+
+  .first-column h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .first-column p {
+    font-size: 1rem;
+  }
+
+  .second-column h3 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .second-column p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+  .text-container-grid {
+    margin: 2rem 1.5rem;
+    gap: 3rem;
+  }
+
+  .first-column h2 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .second-column h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .second-column p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive styling for small mobile devices */
+@media (max-width: 576px) {
+  .text-container-grid {
+    margin: 1rem;
+    gap: 2rem;
+  }
+
+  .first-column h2 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  .second-column h3 {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .second-column p {
+    font-size: 0.9rem;
+  }
+}

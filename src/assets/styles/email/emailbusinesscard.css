@@ -1,0 +1,195 @@
+/* emailquotes.css */
+.email-quotes {
+  padding: 2rem 8rem;
+  text-align: center;
+  background-color: #cbb0eb;
+  color: #1f1738;
+}
+
+/* Header styling */
+.email-quotes-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-quotes-header p {
+  font-size: 1.2rem;
+  margin-bottom: 6rem;
+}
+
+/* Image Section */
+.email-quotes-image-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.email-quotes-image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.email-quotes-image-item img {
+  width: 100%;
+  height: auto;
+}
+
+.email-quotes-image-item:hover {
+  transform: scale(1.05);
+}
+
+/* Row span */
+.email-quotes-row-span {
+  grid-row: 1 / span 2;
+}
+
+/* Features Section */
+.email-quotes-features-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6rem;
+  padding: 2rem 0;
+}
+
+.email-quotes-features-text {
+  text-align: left;
+  width: 38%;
+}
+
+.email-quotes-features-text h3 {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.email-quotes-features-text p {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.email-quotes-features-list {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.email-quotes-features-list h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-quotes-features-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.email-quotes-features-list li {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.email-quotes-features-list li::before {
+  content: "✓";
+  margin-right: 0.5rem;
+  background-color:
+    #1f1738;
+  color: #cbb0eb;
+  padding: 0.1rem 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .email-quotes {
+    padding: 1rem;
+    /* Reduce padding for medium screens */
+  }
+
+  .email-quotes-image-section {
+    grid-template-columns: repeat(2, 1fr);
+    /* Change to 2 columns */
+  }
+
+  .email-quotes-features-section {
+    flex-direction: column;
+    /* Stack columns */
+    align-items: center;
+    /* Center content */
+  }
+
+  .email-quotes-features-text {
+    padding-right: 0;
+    /* Remove right padding */
+    margin-bottom: 2rem;
+    /* Add margin below */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+  }
+
+  .email-quotes-features-list {
+    padding-left: 0;
+    /* Remove left padding */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+  }
+}
+
+@media (max-width: 768px) {
+  .email-quotes-header h2 {
+    font-size: 2rem;
+    /* Smaller font size for header */
+  }
+
+  .email-quotes-header p {
+    font-size: 1.3rem;
+    /* Smaller font size for paragraph */
+  }
+
+  .email-quotes-image-section {
+    grid-template-columns: 1fr 1fr;
+    /* Change to single column */
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .email-quotes-features-section {
+    flex-direction: column;
+    /* Stack columns */
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .email-quotes-features-text,
+  .email-quotes-features-list {
+    width: 90%;
+    text-align: left;
+
+    /* Make text sections a bit wider */
+  }
+
+  .email-quotes-features-text h3 {
+    font-size: 2rem;
+  }
+
+  .email-quotes-features-text p {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .email-quotes-features-list h4 {
+    font-size: 1.2rem;
+    /* Smaller font size for features heading */
+  }
+
+  .email-quotes-features-list li {
+    font-size: 1.1rem;
+    /* Smaller font size for list items */
+  }
+}

@@ -1,0 +1,132 @@
+.email-website-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #cbb0eb;
+  padding: 5rem 8rem;
+  height: 70vh;
+  color: #1f1738;
+}
+
+/* Adjust for smaller desktops */
+.email-website-top .email-content-box {
+  width: 40%;
+}
+
+.email-website-top .email-content-box h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 3.9rem;
+}
+
+.email-website-top .email-content-box p {
+  font-size: 1.5rem;
+}
+
+.email-website-top .email-content-box button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #1f1738;
+  color: #cbb0eb;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.email-website-top .email-content-box button:hover {
+  background-color: #e5d7f5;
+  color: #1f1738;
+}
+
+.email-website-top .email-image-box {
+  width: 60%;
+}
+
+.email-website-top .email-image-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet and small desktop devices */
+@media (max-width: 1024px) {
+  .email-website-top {
+    flex-direction: column;
+    padding: 3rem;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .email-website-top .email-content-box,
+  .email-website-top .email-image-box {
+    width: 100%;
+  }
+
+  .email-website-top .email-content-box {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .email-website-top .email-image-box {
+    margin-top: 1rem;
+  }
+
+  .email-website-top .email-content-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .email-website-top .email-content-box p {
+    font-size: 1.2rem;
+  }
+
+  .email-website-top .email-content-box button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .email-website-top {
+    padding: 2rem;
+  }
+
+  .email-website-top .email-content-box h1 {
+    font-size: 2rem;
+  }
+
+  .email-website-top .email-content-box p {
+    font-size: 1rem;
+  }
+
+  .email-website-top .email-content-box button {
+    padding: 0.7rem 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .email-website-top {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .email-website-top .email-content-box h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .email-website-top .email-content-box p {
+    font-size: 1.2rem;
+  }
+
+  .email-website-top .email-content-box button {
+    padding: 0.6rem 1.2rem;
+    font-weight: 800;
+    font-size: 1.1rem;
+  }
+}

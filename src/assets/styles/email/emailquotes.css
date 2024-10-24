@@ -1,0 +1,144 @@
+/* Quote section layout */
+.email-quote-section {
+  display: flex;
+  align-items: center;
+  background-color: #cbb0eb;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #1f1738;
+}
+
+/* Image styling */
+.email-quote-image {
+  flex: 1;
+  max-width: 40%;
+}
+
+.email-quote-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Text content styling */
+.email-quote-text {
+  flex: 1;
+  max-width: 35%;
+  color: #1f1738;
+  padding-left: 2rem;
+}
+
+.email-quote-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.email-quote-text p {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.email-quote-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.email-get-started-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #1f1738;
+  color: #cbb0eb;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.email-get-started-btn:hover {
+  background-color: #cbb0eb;
+  color: #1f1738;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .email-quote-section {
+    flex-direction: column;
+  }
+
+  .email-quote-image,
+  .email-quote-text {
+    max-width: 100%;
+    /* Stack image and text vertically */
+    text-align: left;
+  }
+
+  .email-quote-text {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  .email-quote-text h2 {
+    font-size: 2rem;
+  }
+
+  .email-quote-text p,
+  .email-quote-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .email-get-started-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-quote-section {
+
+    padding: 1.5rem;
+  }
+
+  .email-quote-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .email-quote-text p,
+  .email-quote-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .email-get-started-btn {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .email-quote-section {
+
+    padding: 1rem;
+  }
+
+  .email-quote-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .email-quote-text p {
+    font-size: 1.1rem;
+  }
+
+  .email-quote-text h3 {
+    font-size: 0.89rem;
+    font-weight: 800;
+  }
+
+  .email-get-started-btn {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,247 @@
+/* General styling */
+.email-website-faq-section {
+  padding: 1rem 2rem;
+  background-color: #cbb0eb;
+  margin: 0 auto;
+  color: #1f1738;
+}
+
+/* Website introduction styling */
+.email-website-intro {
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.email-website-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.email-website-intro p {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+/* Feature row */
+.email-features-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.email-feature-box {
+  flex: 1;
+  max-width: 416px;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  background-color: #f9f9f9;
+}
+
+.email-feature-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.email-feature-box p {
+  font-size: 1.1rem;
+}
+
+/* FAQ Section */
+.email-faq-section {
+  margin: 5rem 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.email-faq-left-column {
+  flex: 1;
+  max-width: 45%;
+}
+
+.email-faq-left-column h2 {
+  font-size: 2rem;
+}
+
+.email-faq-right-column {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Accordion styles */
+.email-accordion {
+  background-color: #cbb0eb;
+  border-radius: 10px;
+}
+
+.email-accordion-item {
+  padding: 1rem;
+}
+
+.email-accordion-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.email-accordion-title h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.email-accordion-title span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.email-accordion-content {
+  padding: 1rem 0;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+
+  .email-features-row,
+  .email-faq-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-feature-box {
+    max-width: 100%;
+  }
+
+  .email-faq-left-column,
+  .email-faq-right-column {
+    max-width: 100%;
+  }
+
+  .email-website-intro {
+    width: 70%;
+  }
+
+  .email-accordion-title h3 {
+    font-size: 1.6rem;
+  }
+
+  .email-accordion-title span {
+    font-size: 1.8rem;
+  }
+
+  .email-accordion-content {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-website-intro h2 {
+    font-size: 2rem;
+  }
+
+  .email-feature-box h3 {
+    font-size: 1.4rem;
+  }
+
+  .email-feature-box p {
+    font-size: 1rem;
+  }
+
+  .email-faq-left-column h2 {
+    font-size: 1.8rem;
+  }
+
+  .email-accordion-title h3 {
+    font-size: 1.4rem;
+  }
+
+  .email-accordion-title span {
+    font-size: 1.6rem;
+  }
+
+  .email-accordion-content {
+    font-size: 1rem;
+  }
+
+  .email-accordion {
+    padding: 0.8rem;
+  }
+
+  .email-accordion-item {
+    padding: 0.8rem;
+  }
+
+  .email-website-intro {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .email-website-faq-section {
+    padding: 1rem 1rem;
+  }
+
+  .email-website-intro h2 {
+    font-size: 1.6rem;
+  }
+
+  /* 
+  .website-intro p {
+    margin-bottom: 0;
+  } */
+
+  .email-features-row {
+    padding: 1rem;
+  }
+
+  .email-faq-section {
+    padding: 1rem;
+    margin: 5rem 0;
+  }
+
+  .email-feature-box p {
+    margin-bottom: 0;
+  }
+
+
+  .faq-left-column h2 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .website-intro {
+    width: 100%;
+  }
+
+  .email-accordion-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .email-accordion-title span {
+    font-size: 1.4rem;
+  }
+
+  .email-accordion-content {
+    font-size: 0.9rem;
+  }
+
+  .email-accordion {
+    padding: 0.5rem;
+  }
+
+  .email-accordion-item {
+    padding: 0.5rem;
+  }
+
+  /* .faq-section {
+    margin: 0;
+    align-items: center;
+  } */
+}

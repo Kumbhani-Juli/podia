@@ -1,0 +1,144 @@
+/* Quote section layout */
+.quote-section {
+  display: flex;
+  align-items: center;
+  background-color: #F6DDC4;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #452623;
+}
+
+/* Image styling */
+.quote-image {
+  flex: 1;
+  max-width: 40%;
+}
+
+.quote-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Text content styling */
+.quote-text {
+  flex: 1;
+  max-width: 35%;
+  color: #452623;
+  padding-left: 2rem;
+}
+
+.quote-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.quote-text p {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.quote-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.get-started-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #452623;
+  color: #f6ddc4;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #f6ddc4;
+  color: #452623;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .quote-section {
+    flex-direction: column;
+  }
+
+  .quote-image,
+  .quote-text {
+    max-width: 100%;
+    /* Stack image and text vertically */
+    text-align: left;
+  }
+
+  .quote-text {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  .quote-text h2 {
+    font-size: 2rem;
+  }
+
+  .quote-text p,
+  .quote-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .get-started-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-section {
+
+    padding: 1.5rem;
+  }
+
+  .quote-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .quote-text p,
+  .quote-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .get-started-btn {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .quote-section {
+
+    padding: 1rem;
+  }
+
+  .quote-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .quote-text p {
+    font-size: 1.1rem;
+  }
+
+  .quote-text h3 {
+    font-size: 0.89rem;
+    font-weight: 800;
+  }
+
+  .get-started-btn {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+  }
+}

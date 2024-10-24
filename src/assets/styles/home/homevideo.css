@@ -1,0 +1,219 @@
+.video-component {
+  padding: 2rem 0;
+}
+
+/* Video sections layout */
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 8rem;
+  flex-wrap: wrap;
+}
+
+.video-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Video styling */
+.video-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 35%;
+}
+
+.text-content h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.text-content h3 {
+  font-size: 2.6rem;
+  color: #555;
+  margin: 0;
+}
+
+.text-content p {
+  font-size: 1.3rem;
+  color: black;
+}
+
+/* Button styling */
+.learn-more-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Section-specific button styles */
+.section-1-btn {
+  background-color: #452623;
+  color: #f6ddc4;
+}
+
+.section-1-btn:hover {
+  background-color: #f6ddc4;
+  color: #452623;
+}
+
+.section-2-btn {
+  background-color: #10242f;
+  color: #e1edf2;
+}
+
+.section-2-btn:hover {
+  background-color: #e1edf2;
+  color: #10242f;
+}
+
+.section-3-btn {
+  background-color: #1f1738;
+  color: #cbb0eb;
+}
+
+.section-3-btn:hover {
+  background-color: #cbb0eb;
+  color: #1f1738;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .video-section {
+    flex-direction: column;
+    /* Stack sections vertically */
+    padding: 2rem 4rem;
+    /* Adjusted padding */
+  }
+
+  .video-content,
+  .text-content {
+    max-width: 100%;
+    /* Allow full width */
+  }
+
+  .text-content {
+    margin-top: 2rem;
+    /* Margin adjustment */
+    text-align: center;
+    /* Center text */
+  }
+
+  .text-content h2 {
+    font-size: 1.75rem;
+    /* Adjusted font sizes */
+  }
+
+  .text-content h3 {
+    font-size: 1.5rem;
+    /* Adjusted font sizes */
+  }
+
+  .text-content p {
+    font-size: 1.1rem;
+    /* Adjusted font sizes */
+  }
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    padding: 1.5rem 2rem;
+    /* Adjusted padding */
+  }
+
+  .video-content {
+    max-width: 100%;
+    /* Full width for video */
+  }
+
+  .text-content {
+    margin-top: 1.5rem;
+    /* Margin adjustment */
+    text-align: center;
+    /* Center text */
+  }
+
+  .text-content h2 {
+    font-size: 1.6rem;
+    /* Adjusted font sizes */
+  }
+
+  .text-content h3 {
+    font-size: 1.4rem;
+    /* Adjusted font sizes */
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    /* Adjusted font sizes */
+  }
+
+  .learn-more-btn {
+    font-size: 0.95rem;
+    /* Button font size */
+    padding: 0.75rem 1.5rem;
+    /* Button padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .video-section {
+    padding: 1.5rem 2rem;
+  }
+
+  .video-section.reverse {
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    /* Compact padding */
+  }
+
+  .video-content {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .text-content {
+    margin-top: 1.5rem;
+    /* Margin adjustment */
+    text-align: left;
+    /* Center text */
+  }
+
+  .text-content h2 {
+    font-size: 1.4rem;
+    /* Adjusted font sizes */
+  }
+
+  .text-content h3 {
+    font-size: 1.2rem;
+    /* Adjusted font sizes */
+    font-weight: 700;
+  }
+
+  .text-content p {
+    font-size: 1.1rem;
+    /* Adjusted font sizes */
+  }
+
+  .learn-more-btn {
+    font-size: 1rem;
+    /* Button font size */
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    /* Button padding */
+    font-weight: 700;
+  }
+}
