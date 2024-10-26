@@ -1,0 +1,224 @@
+/* Main container styling */
+.banner-online-course-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 5rem;
+  color: #10242F;
+  font-family: Arial, sans-serif;
+}
+
+/* Left column styling */
+.banner-left-column {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.banner-left-column h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner-left-column p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Right column styling */
+.banner-right-column {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.right-content {
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.right-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.right-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Migration section styling */
+.migration-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.migration-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.get-migration-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #10242F;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.banner-online-course-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a5c8d8;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #10242F;
+}
+
+.banner-online-course-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.banner-online-course-content button {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #10242F;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 414px) {
+  .banner-online-course-container {
+    margin: 1rem 0.5rem;
+  }
+
+  .banner-online-course-content {
+    padding: 2rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .banner-online-course-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .banner-online-course-content button {
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .banner-left-column {
+    margin: 0 1rem;
+  }
+
+  /* Make sure text elements resize appropriately */
+  .banner-left-column h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .banner-left-column p {
+    font-size: 1.1rem;
+  }
+
+  .right-content {
+    padding: 1rem;
+  }
+
+  .right-content h3 {
+    font-size: 1.9rem;
+  }
+
+  .right-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 436px) {
+  .banner-online-course-container {
+    margin: 2rem 1rem;
+  }
+
+  .banner-online-course-content {
+    padding: 3rem 1rem;
+  }
+
+  .banner-online-course-content button {
+    padding: 0.9rem 1.7rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-online-course-container {
+    flex-direction: row;
+    gap: 3rem;
+
+  }
+
+  .banner-left-column,
+  .banner-right-column {
+    flex: 1;
+  }
+
+  .banner-online-course-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 4rem;
+    text-align: left;
+  }
+
+  .banner-online-course-content p {
+    font-size: 1.2rem;
+  }
+
+  .banner-online-course-content button {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-online-course-container {
+    gap: 4rem;
+  }
+
+  .banner-left-column h2 {
+    font-size: 2.5rem;
+  }
+
+  .banner-left-column p,
+  .right-content p,
+  .migration-section p {
+    font-size: 1.3rem;
+  }
+
+  .get-migration-btn {
+    font-size: 1.2rem;
+  }
+
+  .banner-online-course-content {
+    padding: 5rem 5rem;
+  }
+
+  .banner-online-course-content p {
+    font-size: 1.3rem;
+  }
+
+  .banner-online-course-content button {
+    font-size: 1.3rem;
+  }
+}

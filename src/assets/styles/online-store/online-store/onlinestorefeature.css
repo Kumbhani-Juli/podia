@@ -1,0 +1,100 @@
+/* Feature.css */
+
+.online-store-feature-container {
+  margin: 0 auto;
+  padding: 3rem 5rem;
+}
+
+.online-store-feature-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.online-store-feature-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.online-store-feature-header p {
+  font-size: 1.2rem;
+  width: 40%;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.online-store-feature-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.online-store-feature-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+}
+
+.online-store-feature-box {
+  padding: 1.5rem;
+}
+
+.online-store-feature-box h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.online-store-feature-box p {
+  font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .online-store-feature-container {
+    padding: 2rem 1rem;
+  }
+
+  .online-store-feature-header {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .online-store-feature-header h2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    /* Slightly smaller for mobile */
+  }
+
+  .online-store-feature-header p {
+    width: 100%;
+    /* Wider for smaller screens *marg/
+    font-size: 1.4rem;
+    /* Smaller font size */
+    margin-bottom: 1rem;
+  }
+
+  .online-store-feature-box {
+    padding: 0;
+  }
+
+  .online-store-feature-box h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    /* Adjust h1 size for better readability */
+  }
+
+  .online-store-feature-box p {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    /* Smaller font size for better mobile view */
+  }
+
+  .online-store-feature-grid {
+    grid-template-columns: repeat(1, 1fr);
+    /* Three columns for desktops */
+  }
+}

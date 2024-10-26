@@ -1,0 +1,145 @@
+/* Main Container */
+.online-course-container-podia {
+  margin: 0 auto;
+  background-color: #a5c8d8;
+  padding: 2rem 1rem;
+  color: #10242F;
+  text-align: center;
+}
+
+/* Header Section Styling */
+.online-course-header-podia h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.online-course-header-podia p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-selling-btn-podia {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #10242F;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10rem;
+}
+
+/* Image and Text Section */
+.online-course-content-podia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-around;
+  margin-right: auto;
+  margin-top: 10rem;
+  text-align: left;
+}
+
+.course-image-podia img {
+  width: 100%;
+  max-width: 769px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.course-description-podia {
+  max-width: 600px;
+}
+
+.course-description-podia h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.course-description-podia p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+
+/* Base styles (Mobile-First) */
+
+/* Responsive for tablets (768px and up) */
+@media (min-width: 768px) {
+  .online-course-content-podia {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .course-description-podia {
+    text-align: left;
+  }
+}
+
+/* Responsive for desktops (1024px and up) */
+@media (min-width: 1024px) {
+  .online-course-header-podia {
+    margin: 0;
+  }
+
+  .online-course-header-podia h2 {
+    font-size: 3rem;
+  }
+
+  .online-course-header-podia p,
+  .course-description-podia p {
+    font-size: 1.3rem;
+  }
+
+  .start-selling-btn-podia {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Additional responsiveness for larger screens (1200px and up) */
+@media (min-width: 1200px) {
+  .online-course-container-podia {
+    padding: 3rem 2rem;
+  }
+
+  .online-course-header-podia h2 {
+    font-size: 3.5rem;
+  }
+
+  .course-description-podia h3 {
+    font-size: 3rem;
+  }
+
+  .course-description-podia p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-selling-btn-podia {
+    margin-bottom: 3rem;
+  }
+
+  .online-course-content-podia {
+    margin-top: 0;
+  }
+
+  .course-description-podia h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .course-description-podia p {
+    font-size: 1.5rem;
+  }
+}

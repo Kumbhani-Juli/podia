@@ -10,6 +10,8 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Website from "./components/Website";
 import Email from "./components/Email";
+import OnlineStore from "./components/online-store/OnlineStore";
+import OnlineCourse from "./components/online-store/OnlineCourse";
 
 function App() {
 	return (
@@ -45,6 +47,28 @@ function App() {
 							<Header bgcolor="#cbb0eb" color="#1f1738" />
 							<Email />
 							<Footer bgcolor="#cbb0eb" color="#1f1738" />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="online-store/"
+					element={
+						<>
+							<Header bgcolor="#a5c8d8" color=" #10242F" />
+							<OnlineStore />
+							<Footer bgcolor="#a5c8d8" color=" #10242F" />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="online-course/"
+					element={
+						<>
+							<Header bgcolor="#a5c8d8" color=" #10242F" />
+							<OnlineCourse />
+							<Footer bgcolor=" #a5c8d8" color=" #10242F" />{" "}
 						</>
 					}
 				/>{" "}
