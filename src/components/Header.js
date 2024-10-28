@@ -41,22 +41,22 @@ const Header = ({ bgcolor, color }) => {
 			<div className="header-left-section-content">
 				<div className="left-side">
 					<div className="logo">
-						<Link to="/">
+						<Link to="/" onClick={() => setMenuOpen(false)}>
 							<a href="#">podia</a>
 						</Link>
 					</div>
 
-					<button className="mobile-sign-up">Sign Up Free</button>
+					<button className="mobile-sign-up" onClick={() => setMenuOpen(false)}>Sign Up Free</button>
 					{/* Toggle Button for Mobile */}
 					<button className="menu-toggle" onClick={toggleMenu}>
 						<FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
 					</button>
 				</div>
 				<nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-					<Link to="/website">
+					<Link to="/website" onClick={() => setMenuOpen(false)}>
 						<a href="#">Website</a>
 					</Link>
-					<Link to="/email">
+					<Link to="/email" onClick={() => setMenuOpen(false)}>
 						<a href="#">Email</a>
 					</Link>
 					<div className="dropdown">
@@ -67,42 +67,35 @@ const Header = ({ bgcolor, color }) => {
 						{dropdownOpen && (
 							<ul className="dropdown-menu">
 								<li>
-									<Link
-										to="/online-store"
-										className="header-dropdown-menu-link"
-									>
-										{" "}
+									<Link to="/online-store" className="header-dropdown-menu-link" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>
 										Online Store
 									</Link>
 								</li>
 
 								<li>
-									<Link
-										to="/online-course"
-										className="header-dropdown-menu-link"
-									>
-										{" "}
+									<Link to="/online-course" className="header-dropdown-menu-link" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }}>
 										Online Courses
 									</Link>
 								</li>
-								<li>Digital Downloads</li>
-								<li>Webinars</li>
-								<li>Coaching</li>
+								<li><Link className="header-dropdown-menu-link" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }} to='/'>Digital Downloads</Link></li>
+								<li><Link className="header-dropdown-menu-link" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }} to='/'>Webinars</Link></li>
+								<li><Link className="header-dropdown-menu-link" onClick={() => { setMenuOpen(false); setDropdownOpen(false) }} to='/'>Coaching</Link></li>
 							</ul>
 						)}
 					</div>
-					<a href="#">Switch to Podia</a>
-					<a href="#">Pricing</a>
-					<a href="#" className="mobile-login">
+
+					<Link to="/switch" onClick={() => setMenuOpen(false)}>Switch to Podia</Link>
+					<Link to="/pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
+					<a href="#" className="mobile-login" onClick={() => setMenuOpen(false)}>
 						Login
 					</a>
 				</nav>
 			</div>
 			<div className="right-side">
-				<a href="#" className="login">
+				<a href="#" className="login" onClick={() => setMenuOpen(false)}>
 					Login
 				</a>
-				<button className="sign-up">Sign Up Free</button>
+				<button className="sign-up" onClick={() => setMenuOpen(false)}>Sign Up Free</button>
 			</div>
 		</header>
 	);

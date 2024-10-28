@@ -12,6 +12,8 @@ import Website from "./components/Website";
 import Email from "./components/Email";
 import OnlineStore from "./components/online-store/OnlineStore";
 import OnlineCourse from "./components/online-store/OnlineCourse";
+import SwitchToPodia from "./components/SwitchToPodia";
+import PricingPage from "./components/PricingPage";
 
 function App() {
 	return (
@@ -46,7 +48,7 @@ function App() {
 						<>
 							<Header bgcolor="#cbb0eb" color="#1f1738" />
 							<Email />
-							<Footer bgcolor="#cbb0eb" color="#1f1738" />{" "}
+							<Footer bgcolor="#e5d7f5" color="#1f1738" />{" "}
 						</>
 					}
 				/>{" "}
@@ -69,6 +71,28 @@ function App() {
 							<Header bgcolor="#a5c8d8" color=" #10242F" />
 							<OnlineCourse />
 							<Footer bgcolor=" #a5c8d8" color=" #10242F" />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="switch/"
+					element={
+						<>
+							<Header bgcolor="#f6ddc4" color="#452623" />
+							<SwitchToPodia />
+							<Footer bgcolor="#fff" color="#06040e" />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="pricing/"
+					element={
+						<>
+							<Header bgcolor="#e5d7f5" color="#1F1738" />
+							<PricingPage />
+							<Footer bgcolor="#e5d7f5" color="#1F1738" />{" "}
 						</>
 					}
 				/>{" "}

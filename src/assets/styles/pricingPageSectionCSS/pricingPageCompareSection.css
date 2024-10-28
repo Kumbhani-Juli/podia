@@ -1,0 +1,66 @@
+.pricing-page-compare-section-container {
+  background-color: #f5f5f5;
+  padding: 5rem;
+}
+
+.pricing-page-compare-section-title h1 {
+  font-size: 50px;
+  color: #1f1738;
+  margin-bottom: 2rem;
+}
+
+.pricing-page-compare-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  font-size: 18px;
+  color: #1f1738;
+}
+
+.feature-header {
+  grid-column: 1 / 2;
+  font-weight: bold;
+  font-size: 24px;
+  color: #1f1738;
+  padding: 1rem 0;
+}
+
+.plan-header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  padding: 1rem 0;
+}
+
+.feature-item {
+  background-color: #f5f5f5;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+
+.plan-detail,
+.plan-check {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.plan-check {
+  font-size: 24px;
+  color: #1f1738;
+}
+
+.pricing-page-compare-section-content .plan-detail:nth-child(odd),
+.pricing-page-compare-section-content .plan-check:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  .pricing-page-compare-section-container {
+    padding: 3rem 1rem;
+  }
+  .pricing-page-compare-section-title h1{
+    font-size: 30px;
+  }
+}

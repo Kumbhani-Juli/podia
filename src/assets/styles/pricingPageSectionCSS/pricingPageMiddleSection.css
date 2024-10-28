@@ -1,0 +1,77 @@
+.pricing-page-middle-section-container {
+  background-color: #e5d7f5;
+  background-image: url("../../images/switchPageImgs/startFreeTrailBgImg1.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+}
+
+.pricing-page-middle-section-content {
+  display: flex;
+}
+
+.pricing-page-middle-section-left-content,
+.pricing-page-middle-section-right-content {
+  width: 50%;
+}
+
+.pricing-page-middle-section-left-content img {
+  height: 670px;
+}
+
+.pricing-page-middle-section-right-content {
+  padding: 5rem;
+}
+
+.pricing-page-middle-section-right-content h1 {
+  font-size: 40px;
+}
+
+.pricing-page-middle-section-right-content p {
+  font-size: 22px;
+  line-height: 2rem;
+}
+
+.pricing-page-middle-section-right-content small {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pricing-page-middle-section-right-content button {
+  border: none;
+  background-color: #10242f;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-page-middle-section-container {
+    padding: 1rem;
+  }
+  .pricing-page-middle-section-content {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .pricing-page-middle-section-left-content,
+  .pricing-page-middle-section-right-content {
+    width: 100%;
+  }
+  .pricing-page-middle-section-left-content img {
+    height: 300px;
+    width: 100%;
+  }
+  .pricing-page-middle-section-right-content {
+    padding: 0;
+  }
+  .pricing-page-middle-section-right-content h1 {
+    font-size: 30px;
+  }
+  .pricing-page-middle-section-right-content p {
+    font-size: 18px;
+    text-align: justify;
+  }
+}

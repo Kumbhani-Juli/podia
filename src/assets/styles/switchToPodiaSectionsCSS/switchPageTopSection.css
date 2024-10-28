@@ -1,0 +1,56 @@
+.switch-page-top-section-container {
+  background-color: #f6ddc4;
+  background-image: url("../../images/switchPageImgs/topSectionBgImg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  padding: 7rem 5rem;
+}
+
+.switch-page-top-section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #452623;
+}
+
+.switch-page-top-section-content h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.switch-page-top-section-content p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.switch-page-top-section-content button {
+  padding: 15px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 12px;
+  background-color: #452623;
+  color: #f6ddc4;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.switch-page-top-section-content button:hover {
+  background-color: #fff;
+  color: #452623;
+}
+
+@media (max-width: 768px) {
+  .switch-page-top-section-container {
+    padding: 4rem 1rem;
+    background-position: left;
+  }
+  .switch-page-top-section-content h2 {
+    font-size: 30px;
+  }
+  .switch-page-top-section-content p{
+    font-size: 16px;
+    text-align: justify;
+  }
+}

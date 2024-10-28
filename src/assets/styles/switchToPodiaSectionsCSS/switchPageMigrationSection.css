@@ -1,0 +1,101 @@
+.switch-page-migration-section-container {
+  padding: 5rem;
+}
+
+.switch-page-migration-section-title {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.switch-page-migration-section-title h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.switch-page-migration-section-title p {
+  font-size: 20px;
+}
+
+.switch-page-migration-section-title button {
+  border: 1px solid #000;
+  background-color: #000;
+  border-radius: 12px;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.switch-page-migration-section-title button:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.switch-page-migration-section-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.switch-page-migration-section-inner-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 33.33%;
+}
+
+.switch-page-migration-section-inner-content-sr-no {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.switch-page-migration-section-inner-content-sr-no p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.switch-page-migration-section-inner-content-body h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.switch-page-migration-section-inner-content-body p {
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .switch-page-migration-section-container {
+    padding: 3rem 1rem;
+  }
+  .switch-page-migration-section-title h2 {
+    font-size: 30px;
+  }
+  .switch-page-migration-section-title p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .switch-page-migration-section-title button {
+    font-size: 16px;
+  }
+  .switch-page-migration-section-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .switch-page-migration-section-inner-content {
+    width: 100%;
+  }
+  .switch-page-migration-section-inner-content h1{
+    font-size: 26px;
+  }
+  .switch-page-migration-section-inner-content p{
+    font-size: 16px;
+  }
+}

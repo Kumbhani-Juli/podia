@@ -1,0 +1,59 @@
+.switch-page-start-free-trail-two-section-container {
+  background-color: #a5c8d8;
+  padding: 5rem;
+}
+
+.switch-page-start-free-trail-two-section-content {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 3rem 5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  color: #10242f;
+}
+
+.switch-page-start-free-trail-two-section-content h2 {
+  font-size: 40px;
+}
+
+.switch-page-start-free-trail-two-section-content p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.switch-page-start-free-trail-two-section-inner-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.switch-page-start-free-trail-two-section-inner-content button {
+  background-color: #10242f;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.switch-page-start-free-trail-two-section-inner-content button:hover {
+  color: #10242f;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .switch-page-start-free-trail-two-section-container {
+    padding: 3rem 1rem;
+  }
+  .switch-page-start-free-trail-two-section-content {
+    padding: 2rem 1rem;
+  }
+  .switch-page-start-free-trail-two-section-content h2 {
+    font-size: 30px;
+  }
+
+  .switch-page-start-free-trail-two-section-content p {
+    font-size: 20px;
+  }
+}
