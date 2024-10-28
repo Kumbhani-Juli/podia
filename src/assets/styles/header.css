@@ -161,6 +161,14 @@ body {
   display: none;
 }
 
+
+
+.header-dropdown-menu-link {
+  background-color: transparent;
+  padding: 0 !important;
+  cursor: pointer;
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
   .header {
@@ -269,6 +277,12 @@ body {
     background-color: #000 !important;
     color: #fff !important;
   }
+
+  .header-dropdown-menu-link {
+    color: #fff !important;
+    background-color: transparent;
+    padding: 0 !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -283,5 +297,11 @@ body {
 
   .sign-up {
     padding: 0.4rem 0.8rem;
+  }
+
+  .header-dropdown-menu-link {
+    color: #fff !important;
+    background-color: transparent;
+    padding: 0 !important;
   }
 }

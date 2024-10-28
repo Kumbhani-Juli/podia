@@ -1,0 +1,247 @@
+/* General styling */
+.online-course-website-faq-section {
+  padding: 1rem 2rem;
+  background-color: #a5c8d8;
+  margin: 0 auto;
+  color: #10242F;
+}
+
+/* Website introduction styling */
+.online-course-website-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.online-course-website-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.online-course-website-intro p {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+/* Feature row */
+.online-course-features-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.online-course-feature-box {
+  flex: 1;
+  max-width: 416px;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  background-color: #f9f9f9;
+}
+
+.online-course-feature-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.online-course-feature-box p {
+  font-size: 1.1rem;
+}
+
+/* FAQ Section */
+.online-course-faq-section {
+  margin: 1rem 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.online-course-faq-left-column {
+  flex: 1;
+  max-width: 45%;
+}
+
+.online-course-faq-left-column h2 {
+  font-size: 2rem;
+}
+
+.online-course-faq-right-column {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Accordion styles */
+.online-course-accordion {
+  background-color: #a5c8d8;
+  border-radius: 10px;
+}
+
+.online-course-accordion-item {
+  padding: 1rem;
+}
+
+.online-course-accordion-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: flex-start;
+}
+
+.online-course-accordion-title h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.online-course-accordion-title span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.online-course-accordion-content {
+  padding: 1rem 0;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+
+  .online-course-features-row,
+  .online-course-faq-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .online-course-feature-box {
+    max-width: 100%;
+  }
+
+  .online-course-faq-left-column,
+  .online-course-faq-right-column {
+    max-width: 100%;
+  }
+
+  .online-course-website-intro {
+    width: 70%;
+  }
+
+  .online-course-accordion-title h3 {
+    font-size: 1.6rem;
+  }
+
+  .online-course-accordion-title span {
+    font-size: 1.8rem;
+  }
+
+  .online-course-accordion-content {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .online-course-website-intro h2 {
+    font-size: 2rem;
+  }
+
+  .online-course-feature-box h3 {
+    font-size: 1.4rem;
+  }
+
+  .online-course-feature-box p {
+    font-size: 1rem;
+  }
+
+  .online-course-faq-left-column h2 {
+    font-size: 1.8rem;
+  }
+
+  .online-course-accordion-title h3 {
+    font-size: 1.4rem;
+  }
+
+  .online-course-accordion-title span {
+    font-size: 1.6rem;
+  }
+
+  .online-course-accordion-content {
+    font-size: 1rem;
+  }
+
+  .online-course-accordion {
+    padding: 0.8rem;
+  }
+
+  .online-course-accordion-item {
+    padding: 0.8rem;
+  }
+
+  .online-course-website-intro {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .online-course-website-faq-section {
+    padding: 1rem 1rem;
+  }
+
+  .online-course-website-intro h2 {
+    font-size: 1.6rem;
+  }
+
+  /* 
+  .website-intro p {
+    margin-bottom: 0;
+  } */
+
+  .online-course-features-row {
+    padding: 1rem;
+  }
+
+  .online-course-faq-section {
+    padding: 1rem;
+    margin: 5rem 0;
+  }
+
+  .online-course-feature-box p {
+    margin-bottom: 0;
+  }
+
+
+  .online-course-faq-left-column h2 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .online-course-website-intro {
+    width: 100%;
+  }
+
+  .online-course-accordion-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .online-course-accordion-title span {
+    font-size: 1.4rem;
+  }
+
+  .online-course-accordion-content {
+    font-size: 0.9rem;
+  }
+
+  .online-course-accordion {
+    padding: 0.5rem;
+  }
+
+  .online-course-accordion-item {
+    padding: 0.5rem;
+  }
+
+  /* .faq-section {
+    margin: 0;
+    align-items: center;
+  } */
+}

@@ -1,0 +1,193 @@
+/* homedesign.css */
+.home-design {
+  padding: 2rem 8rem;
+  text-align: center;
+  background-color: #d7eaf3;
+}
+
+/* Header styling */
+.home-design-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-design-header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 6rem;
+}
+
+/* Image Section */
+.home-design-image-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.home-design-image-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.home-design-image-item img {
+  width: 100%;
+  height: auto;
+}
+
+.home-design-image-item:hover {
+  transform: scale(1.05);
+}
+
+/* Row span */
+.home-design-row-span {
+  grid-row: 1 / span 2;
+}
+
+/* Features Section */
+.home-design-features-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 6rem;
+  padding: 2rem 0;
+}
+
+.home-design-features-text {
+  padding-right: 2rem;
+  text-align: left;
+  width: 50%;
+}
+
+.home-design-features-text h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.home-design-features-text p {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.home-design-features-list {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.home-design-features-list h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-design-features-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-design-features-list li {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.home-design-features-list li::before {
+  content: "✓";
+  margin-right: 0.5rem;
+  background-color: #A5C8D8;
+  padding: 0.1rem 0.5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .home-design {
+    padding: 1rem;
+    /* Reduce padding for medium screens */
+  }
+
+  .home-design-image-section {
+    grid-template-columns: repeat(2, 1fr);
+    /* Change to 2 columns */
+  }
+
+  .home-design-features-section {
+    flex-direction: column;
+    /* Stack columns */
+    align-items: center;
+    /* Center content */
+  }
+
+  .home-design-features-text {
+    padding-right: 0;
+    /* Remove right padding */
+    margin-bottom: 2rem;
+    /* Add margin below */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+  }
+
+  .home-design-features-list {
+    padding-left: 0;
+    /* Remove left padding */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-design-header h2 {
+    font-size: 2rem;
+    /* Smaller font size for header */
+  }
+
+  .home-design-header p {
+    font-size: 1.3rem;
+    /* Smaller font size for paragraph */
+  }
+
+  .home-design-image-section {
+    grid-template-columns: 1fr 1fr;
+    /* Change to single column */
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .home-design-features-section {
+    flex-direction: column;
+    /* Stack columns */
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .home-design-features-text,
+  .home-design-features-list {
+    width: 90%;
+    text-align: left;
+
+    /* Make text sections a bit wider */
+  }
+
+  .home-design-features-text h3 {
+    font-size: 2rem;
+  }
+
+  .home-design-features-text p {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .home-design-features-list h4 {
+    font-size: 1.2rem;
+    /* Smaller font size for features heading */
+  }
+
+  .home-design-features-list li {
+    font-size: 1.1rem;
+    /* Smaller font size for list items */
+  }
+}

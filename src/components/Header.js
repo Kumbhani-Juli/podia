@@ -67,11 +67,23 @@ const Header = ({ bgcolor, color }) => {
 						{dropdownOpen && (
 							<ul className="dropdown-menu">
 								<li>
-									<Link to="/online-store"> Online Store</Link>
+									<Link
+										to="/online-store"
+										className="header-dropdown-menu-link"
+									>
+										{" "}
+										Online Store
+									</Link>
 								</li>
 
 								<li>
-									<Link to="/online-course"> Online Courses</Link>
+									<Link
+										to="/online-course"
+										className="header-dropdown-menu-link"
+									>
+										{" "}
+										Online Courses
+									</Link>
 								</li>
 								<li>Digital Downloads</li>
 								<li>Webinars</li>
